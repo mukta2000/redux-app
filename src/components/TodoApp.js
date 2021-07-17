@@ -6,8 +6,7 @@ import AddTodo from './AddTodo'
 import RenderTodo from './RenderTodo'
 
 const mapStateToProps = state => ({
-    // state.todos coz the state handled by todos reducer is todo,
-    // one reducer should only handle one state  
+     
     todos: state.todos
 })
 
