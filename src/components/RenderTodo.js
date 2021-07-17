@@ -17,12 +17,11 @@ class RenderTodo extends Component{
     
   editText=(id,edit_text)=>{
     if(edit_text!==""){
-    // Now calling the editText method in action file through mapDispatchToProps method above,
-    // didn't do the whole thing in mapDispatch method above, coz can't access state there..
+    
         this.props.editText(id,edit_text)
         this.setState({editId:0})}
         else 
-    // if in editing text is null then todo will be deleted
+  
         this.props.deleteTodo(id)
      }
 
