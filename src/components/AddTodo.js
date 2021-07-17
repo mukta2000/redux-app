@@ -17,10 +17,9 @@ class AddTodo extends Component {
     }
 
     addTodo = (text) => {
-        // empty todo will not be added
+        
         if(text!==""){
-        // Now calling the addTodo method in action file through mapDispatchToProps method above
-        // didn't do the whole thing in mapDispatch method above, coz can't access state there..
+        
         this.props.addTodo(text)
         this.setState({ text: '' })
     }
